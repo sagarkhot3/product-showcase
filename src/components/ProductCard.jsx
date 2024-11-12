@@ -20,7 +20,7 @@ const ProductCard = (props) => {
       <div className='flex justify-center items-center gap-1'>
         <span className='text-yellow-500'>★</span>
         <p className='text-gray-600'>
-          {rating.rate}({rating.count} reviews)
+          {rating.rate} ({rating.count} reviews)
         </p>
       </div>
       <button className='mt-4 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700'>
