@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-export const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+// const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const apiBaseUrl = 'https://fakestoreapi.com';
 
 const axiosInstance = axios.create({
   timeout: 30000,
+  baseURL: apiBaseUrl,
 });
 
 export const api = async (url, method) => {
